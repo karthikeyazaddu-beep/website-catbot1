@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CAT BOT Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CAT BOT Customization Dashboard</h1>
+        </header>
+        <main>
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Prefix Settings</li>
+                    <li>Color Customization</li>
+                    <li>Language Selection</li>
+                    <li>Real-Time Preview</li>
+                    <li>Discord Integration</li>
+                </ul>
+            </section>
+            <section class="customization">
+                <h2>Customize Your BOT</h2>
+                <form>
+                    <label for="prefix">Prefix:</label>
+                    <input type="text" id="prefix" name="prefix" required>
+                    <label for="color">Select Color:</label>
+                    <input type="color" id="color" name="color" required>
+                    <label for="language">Select Language:</label>
+                    <select id="language" name="language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                    <button type="submit">Save Settings</button>
+                </form>
+            </section>
+            <section class="preview">
+                <h2>Real-Time Preview</h2>
+                <div class="preview-area">
+                    <p>Your custom prefix is: <span id="preview-prefix"></span></p>
+                    <p>Your selected color is: <span id="preview-color"></span></p>
+                    <p>Your selected language is: <span id="preview-language"></span></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 CAT BOT. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
